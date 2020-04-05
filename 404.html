@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
+    <title>此页面不存在——Gd工作室</title>
+    <style type="text/css" media="screen">
+        body {
+            background-color: #f1f1f1;
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .container {
+            margin: 50px auto 40px auto;
+            width: 600px;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">window.οnlοad=function(){         //一进该页面就加载以下方法
+		tick();                             //显示右下角日期的方法
+		setInterval('countDown()',1000);    //一般秒设置为参数为1000
+		}
+			var sec = 5;                  //设置倒计时时间为5秒
+			function countDown() {        //倒计时的方法
+				if(sec > 0) {
+					num.innerHTML = sec--;
+				} else {
+					location = "menu.html";  //倒计时为0进入的页面
+                                       }
+			}</script>
+</head>
+<body>
+    <div>
+        <img src="Gd.png">
+    </div>
+    <div class="container">
+        <h1>404</h1>
+        <p><strong>这个页面不存在！我想你是输错网址了！</strong></p>
+    </div>
+    <h2 align="right">倒计时</h2>
+    <h3 align="right" id="num" size="7" face="impact">5</h3>
+</body>
+</html>
